@@ -1,0 +1,29 @@
+{
+	"name": "BobuxBin",
+	"version": "0.0.4",
+	"private": true,
+	"description": "BobuxBin is a place where you can store text/code/script for unlimited period of time! Made by Cloudflare#0001.",
+	"keywords": [
+		"paste",
+		"pastebin",
+		"haste",
+		"hastebin",
+		"code",
+		"syntax highlighting"
+	],
+	"author": {
+		"name": "Cloudfry",
+		"email": "dev@liteal.design",
+		"url": "https://bobux.xyz"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"clean-css": "~3.4.19",
+		"express": "~4.14.0",
+		"uglify-js": "~2.7.0",
+		"winston": "~2.2.0"
+	},
+	"scripts": {
+		"start": "node ./server.js"
+	}
+}

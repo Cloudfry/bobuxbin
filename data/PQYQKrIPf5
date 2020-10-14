@@ -1,0 +1,862 @@
+--[[ PeePee Hub Beta
+! WORK IN PROGRESS !
+loadstring: loadstring(game:HttpGet("https://pastebin.com/raw/fuG2QHPB", true))()
+Update Logs: https://pastebin.com/raw/Zw9J4nQ4
+note: THIS VERSION OF PEEPEE HUB MAY BE OUTDATED, GO TO THE PASTEBIN FOR UPDATED VERSION
+Made By zzerexx#3643
+]]--
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Message = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MessageLabel1 = Instance.new("TextLabel")
+local MessageLabel2 = Instance.new("TextLabel")
+local TopBar = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ScriptsTopBar = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Scripts = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local RemoteSpy = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Dex = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ESP = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local HDGraphics = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local FPSBoost = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local CtrlTP = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local ScriptsText = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Area1 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local Credits = Instance.new("TextLabel")
+local Extend = Instance.new("TextButton")
+local Title = Instance.new("TextLabel")
+local Shrink = Instance.new("TextButton")
+local Minimize = Instance.new("TextButton")
+local Maximize = Instance.new("TextButton")
+local Area2 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local UpdateTitle = Instance.new("TextLabel")
+local KillGui = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Credits2 = Instance.new("TextLabel")
+local Credits3 = Instance.new("TextLabel")
+local Credits1 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Message.Name = "Message"
+Message.Parent = ScreenGui
+Message.AnchorPoint = Vector2.new(0.5, 0.5)
+Message.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Message.Position = UDim2.new(0.499471992, 0, 0.023, 0)
+Message.Size = UDim2.new(0, 400, 0, 60)
+
+UICorner.Parent = Message
+
+MessageLabel1.Name = "MessageLabel1"
+MessageLabel1.Parent = Message
+MessageLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MessageLabel1.BackgroundTransparency = 1.000
+MessageLabel1.BorderSizePixel = 0
+MessageLabel1.Position = UDim2.new(-0.00499999523, 0, 0.0761904716, 0)
+MessageLabel1.Size = UDim2.new(0, 400, 0, 50)
+MessageLabel1.ZIndex = 2
+MessageLabel1.Font = Enum.Font.GothamBold
+MessageLabel1.Text = "PeePee Hub has been executed."
+MessageLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageLabel1.TextSize = 24.000
+
+MessageLabel2.Name = "MessageLabel2"
+MessageLabel2.Parent = Message
+MessageLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MessageLabel2.BackgroundTransparency = 1.000
+MessageLabel2.BorderSizePixel = 0
+MessageLabel2.Position = UDim2.new(-0.00499999523, 0, 0.0761904716, 0)
+MessageLabel2.Size = UDim2.new(0, 400, 0, 50)
+MessageLabel2.Visible = false
+MessageLabel2.ZIndex = 2
+MessageLabel2.Font = Enum.Font.GothamBold
+MessageLabel2.Text = "Spamming the Scripts button will break it."
+MessageLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MessageLabel2.TextSize = 19.000
+
+TopBar.Name = "TopBar"
+TopBar.Parent = ScreenGui
+TopBar.AnchorPoint = Vector2.new(0.5, 0.5)
+TopBar.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0.499472022, 0, 0.301186919, 0)
+TopBar.Size = UDim2.new(0, 350, 0, 32)
+TopBar.ZIndex = 3
+
+Main.Name = "Main"
+Main.Parent = TopBar
+Main.AnchorPoint = Vector2.new(0.5, 0)
+Main.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.499472022, 0, 0, 0)
+Main.Size = UDim2.new(0, 350, 0, 300)
+
+UICorner_2.Parent = Main
+
+ScriptsTopBar.Name = "ScriptsTopBar"
+ScriptsTopBar.Parent = TopBar
+ScriptsTopBar.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsTopBar.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+ScriptsTopBar.BorderSizePixel = 0
+ScriptsTopBar.Position = UDim2.new(1.176, 0, 0.5, 0)
+ScriptsTopBar.Size = UDim2.new(0, 125, 0, 32)
+ScriptsTopBar.ZIndex = 2
+
+UICorner_3.Parent = ScriptsTopBar
+
+Scripts.Name = "Scripts"
+Scripts.Parent = ScriptsTopBar
+Scripts.AnchorPoint = Vector2.new(0.5, 0.00999999978)
+Scripts.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.498043358, 0, 0.0675000027, 0)
+Scripts.Size = UDim2.new(0, 125, 0, 300)
+
+UICorner_4.Parent = Scripts
+
+RemoteSpy.Name = "RemoteSpy"
+RemoteSpy.Parent = Scripts
+RemoteSpy.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+RemoteSpy.BorderSizePixel = 0
+RemoteSpy.Position = UDim2.new(0.0960000008, 0, 0.148750007, 0)
+RemoteSpy.Size = UDim2.new(0, 100, 0, 30)
+RemoteSpy.ZIndex = 2
+RemoteSpy.Font = Enum.Font.GothamBold
+RemoteSpy.Text = "Remote Spy"
+RemoteSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoteSpy.TextSize = 14.000
+
+UICorner_5.Parent = RemoteSpy
+
+Dex.Name = "Dex"
+Dex.Parent = Scripts
+Dex.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Dex.BorderSizePixel = 0
+Dex.Position = UDim2.new(0.0960000008, 0, 0.289000005, 0)
+Dex.Size = UDim2.new(0, 100, 0, 30)
+Dex.ZIndex = 2
+Dex.Font = Enum.Font.GothamBold
+Dex.Text = "Dex"
+Dex.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dex.TextSize = 20.000
+
+UICorner_6.Parent = Dex
+
+ESP.Name = "ESP"
+ESP.Parent = Scripts
+ESP.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+ESP.BorderSizePixel = 0
+ESP.Position = UDim2.new(0.0960000008, 0, 0.42899999, 0)
+ESP.Size = UDim2.new(0, 100, 0, 30)
+ESP.ZIndex = 2
+ESP.Font = Enum.Font.GothamBold
+ESP.Text = "ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 20.000
+
+UICorner_7.Parent = ESP
+
+HDGraphics.Name = "HDGraphics"
+HDGraphics.Parent = Scripts
+HDGraphics.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+HDGraphics.BorderSizePixel = 0
+HDGraphics.Position = UDim2.new(0.0960000008, 0, 0.569999993, 0)
+HDGraphics.Size = UDim2.new(0, 100, 0, 30)
+HDGraphics.ZIndex = 2
+HDGraphics.Font = Enum.Font.GothamBold
+HDGraphics.Text = "HD Graphics"
+HDGraphics.TextColor3 = Color3.fromRGB(255, 255, 255)
+HDGraphics.TextSize = 14.000
+
+UICorner_8.Parent = HDGraphics
+
+FPSBoost.Name = "FPSBoost"
+FPSBoost.Parent = Scripts
+FPSBoost.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+FPSBoost.BorderSizePixel = 0
+FPSBoost.Position = UDim2.new(0.0960000008, 0, 0.716000021, 0)
+FPSBoost.Size = UDim2.new(0, 100, 0, 30)
+FPSBoost.ZIndex = 2
+FPSBoost.Font = Enum.Font.GothamBold
+FPSBoost.Text = "FPS Boost"
+FPSBoost.TextColor3 = Color3.fromRGB(255, 255, 255)
+FPSBoost.TextSize = 14.000
+
+UICorner_9.Parent = FPSBoost
+
+CtrlTP.Name = "CtrlTP"
+CtrlTP.Parent = Scripts
+CtrlTP.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+CtrlTP.BorderSizePixel = 0
+CtrlTP.Position = UDim2.new(0.0960000008, 0, 0.859333336, 0)
+CtrlTP.Size = UDim2.new(0, 100, 0, 30)
+CtrlTP.ZIndex = 2
+CtrlTP.Font = Enum.Font.GothamBold
+CtrlTP.Text = "Ctrl TP"
+CtrlTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+CtrlTP.TextSize = 20.000
+
+UICorner_10.Parent = CtrlTP
+
+ScriptsText.Name = "ScriptsText"
+ScriptsText.Parent = ScriptsTopBar
+ScriptsText.AnchorPoint = Vector2.new(0.5, 0.5)
+ScriptsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsText.BackgroundTransparency = 1.000
+ScriptsText.BorderSizePixel = 0
+ScriptsText.Position = UDim2.new(0.5, 0, 0.535312653, 0)
+ScriptsText.Size = UDim2.new(0, 125, 0, 32)
+ScriptsText.ZIndex = 2
+ScriptsText.Font = Enum.Font.GothamBold
+ScriptsText.Text = "Scripts"
+ScriptsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsText.TextSize = 18.000
+
+UICorner_11.Parent = TopBar
+
+Area1.Name = "Area1"
+Area1.Parent = TopBar
+Area1.AnchorPoint = Vector2.new(0.5, 0)
+Area1.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Area1.BorderSizePixel = 0
+Area1.Position = UDim2.new(0.225714281, 0, 1.38250017, 0)
+Area1.Size = UDim2.new(0, 135, 0, 243)
+Area1.ZIndex = 2
+
+UICorner_12.Parent = Area1
+
+Credits.Name = "Credits"
+Credits.Parent = Area1
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 100.000
+Credits.BorderSizePixel = 0
+Credits.Size = UDim2.new(0, 135, 0, 50)
+Credits.ZIndex = 3
+Credits.Font = Enum.Font.GothamBold
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextSize = 24.000
+
+Extend.Name = "Extend"
+Extend.Parent = TopBar
+Extend.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Extend.BackgroundTransparency = 100.000
+Extend.BorderSizePixel = 0
+Extend.Position = UDim2.new(0.90656209, 0, 0.0301817283, 0)
+Extend.Size = UDim2.new(0, 32, 0, 32)
+Extend.ZIndex = 3
+Extend.Font = Enum.Font.GothamBold
+Extend.Text = ">"
+Extend.TextColor3 = Color3.fromRGB(255, 255, 255)
+Extend.TextSize = 20.000
+
+Title.Name = "Title"
+Title.Parent = TopBar
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 100.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.211018249, 0, -0.00125002861, 0)
+Title.Size = UDim2.new(0, 200, 0, 32)
+Title.ZIndex = 4
+Title.Font = Enum.Font.GothamBold
+Title.Text = "PeePee Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 18.000
+
+Shrink.Name = "Shrink"
+Shrink.Parent = TopBar
+Shrink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Shrink.BackgroundTransparency = 100.000
+Shrink.BorderSizePixel = 0
+Shrink.Position = UDim2.new(0.90656209, 0, 0.0301817283, 0)
+Shrink.Size = UDim2.new(0, 32, 0, 32)
+Shrink.Visible = false
+Shrink.ZIndex = 3
+Shrink.Font = Enum.Font.GothamBold
+Shrink.Text = "<"
+Shrink.TextColor3 = Color3.fromRGB(255, 255, 255)
+Shrink.TextSize = 20.000
+
+Minimize.Name = "Minimize"
+Minimize.Parent = TopBar
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 100.000
+Minimize.BorderSizePixel = 0
+Minimize.Position = UDim2.new(0.812648118, 0, 0.0274480581, 0)
+Minimize.Size = UDim2.new(0, 32, 0, 32)
+Minimize.ZIndex = 3
+Minimize.Font = Enum.Font.GothamBold
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 20.000
+
+Maximize.Name = "Maximize"
+Maximize.Parent = TopBar
+Maximize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Maximize.BackgroundTransparency = 100.000
+Maximize.BorderSizePixel = 0
+Maximize.Position = UDim2.new(0.812648118, 0, 0.0274480581, 0)
+Maximize.Size = UDim2.new(0, 32, 0, 32)
+Maximize.Visible = false
+Maximize.ZIndex = 3
+Maximize.Font = Enum.Font.GothamBold
+Maximize.Text = "+"
+Maximize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Maximize.TextSize = 20.000
+
+Area2.Name = "Area2"
+Area2.Parent = TopBar
+Area2.AnchorPoint = Vector2.new(0.5, 0)
+Area2.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+Area2.BorderSizePixel = 0
+Area2.Position = UDim2.new(0.70714283, 0, 1.38249969, 0)
+Area2.Size = UDim2.new(0, 180, 0, 180)
+Area2.ZIndex = 2
+
+UICorner_13.Parent = Area2
+
+UpdateTitle.Name = "UpdateTitle"
+UpdateTitle.Parent = Area2
+UpdateTitle.AnchorPoint = Vector2.new(0.5, 0.5)
+UpdateTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateTitle.BackgroundTransparency = 100.000
+UpdateTitle.BorderSizePixel = 0
+UpdateTitle.Position = UDim2.new(0.5, 0, 0.138472155, 0)
+UpdateTitle.Size = UDim2.new(0, 180, 0, 49)
+UpdateTitle.ZIndex = 3
+UpdateTitle.Font = Enum.Font.GothamBold
+UpdateTitle.Text = "Updates"
+UpdateTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateTitle.TextSize = 24.000
+
+KillGui.Name = "KillGui"
+KillGui.Parent = TopBar
+KillGui.AnchorPoint = Vector2.new(0.5, 0.5)
+KillGui.BackgroundColor3 = Color3.fromRGB(19, 19, 19)
+KillGui.BorderSizePixel = 0
+KillGui.Position = UDim2.new(0.70714283, 0, 8.16666603, 0)
+KillGui.Size = UDim2.new(0, 180, 0, 50)
+KillGui.ZIndex = 3
+KillGui.Font = Enum.Font.GothamBold
+KillGui.Text = "Kill Gui"
+KillGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+KillGui.TextSize = 30.000
+
+UICorner_14.Parent = KillGui
+
+Credits2.Name = "Credits2"
+Credits2.Parent = TopBar
+Credits2.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits2.BackgroundTransparency = 1.000
+Credits2.Position = UDim2.new(0.222889602, 0, 4.81178474, 0)
+Credits2.Size = UDim2.new(0, 135, 0, 40)
+Credits2.ZIndex = 3
+Credits2.Font = Enum.Font.GothamBold
+Credits2.Text = "Rainbow Text 5tevenrocks"
+Credits2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits2.TextSize = 14.000
+Credits2.TextWrapped = true
+
+Credits3.Name = "Credits3"
+Credits3.Parent = TopBar
+Credits3.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits3.BackgroundTransparency = 1.000
+Credits3.Position = UDim2.new(0.222889602, 0, 6.03813457, 0)
+Credits3.Size = UDim2.new(0, 135, 0, 40)
+Credits3.ZIndex = 3
+Credits3.Font = Enum.Font.GothamBold
+Credits3.Text = "Smooth Gui Stormtrooper0831"
+Credits3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits3.TextSize = 14.000
+Credits3.TextWrapped = true
+
+Credits1.Name = "Credits1"
+Credits1.Parent = TopBar
+Credits1.AnchorPoint = Vector2.new(0.5, 0.5)
+Credits1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits1.BackgroundTransparency = 1.000
+Credits1.Position = UDim2.new(0.222889602, 0, 3.53437948, 0)
+Credits1.Size = UDim2.new(0, 135, 0, 40)
+Credits1.ZIndex = 3
+Credits1.Font = Enum.Font.GothamBold
+Credits1.Text = "PeePee Hub zzerexx#3643"
+Credits1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits1.TextSize = 14.000
+Credits1.TextWrapped = true
+
+-- Scripts:
+
+local function CWSPB_fake_script() -- Message.MessageScript 
+	local script = Instance.new('LocalScript', Message)
+
+	wait(0) --PeePee Hub has been executed.
+	script.Parent.Position = UDim2.new(0.499, 0, -0.125, 0)
+	
+	script.Parent:FindFirstChild("MessageLabel1").Visible = true
+	script.Parent:TweenPosition(UDim2.new(0.499, 0, 0.01, 0),"Out","Sine","2")
+	wait(4)
+	script.Parent:TweenPosition(UDim2.new(0.499, 0, -0.125, 0),"Out","Sine","2")
+	wait(1)
+	script.Parent:FindFirstChild("MessageLabel1").Visible = true
+	
+	wait(5) --Spamming the Scripts button will break it.
+	script.Parent.Position = UDim2.new(0.499, 0, -0.125, 0)
+	
+	script.Parent:FindFirstChild("MessageLabel1").Visible = false
+	script.Parent:FindFirstChild("MessageLabel2").Visible = true
+	script.Parent:TweenPosition(UDim2.new(0.499, 0, 0.01, 0),"Out","Sine","2")
+	wait(4)
+	script.Parent:TweenPosition(UDim2.new(0.499, 0, -0.125, 0),"Out","Sine","2")
+	wait(1)
+	script.Parent:FindFirstChild("MessageLabel1").Visible = true
+end
+coroutine.wrap(CWSPB_fake_script)()
+local function CFNGZR_fake_script() -- ScriptsText.ScriptsTextRGB 
+	local script = Instance.new('LocalScript', ScriptsText)
+
+	--MADE BY 5tevenrocks
+	
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	
+		counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(CFNGZR_fake_script)()
+local function MZMXQ_fake_script() -- Extend.ExtendScript 
+	local script = Instance.new('LocalScript', Extend)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):TweenPosition(UDim2.new(1.176, 0, 0.5, 0),"Out","Sine","1")
+		wait(1.25)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):TweenSize(UDim2.new(0, 125, 0, 300),"Out","Bounce","1.25")
+		wait(0.5)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP").Visible = true
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy"):TweenPosition(UDim2.new(0.096, 0, 0.149, 0),"Out","Bounce","1.5")
+		wait(0.1)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex"):TweenPosition(UDim2.new(0.096, 0, 0.289, 0),"Out","Bounce","1.5")
+		wait(0.1)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP"):TweenPosition(UDim2.new(0.096, 0, 0.429, 0),"Out","Bounce","1.5")
+		wait(0.1)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics"):TweenPosition(UDim2.new(0.096, 0, 0.570, 0),"Out","Bounce","1.5")
+		wait(0.1)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost"):TweenPosition(UDim2.new(0.096, 0, 0.716, 0),"Out","Bounce","1.5")
+		wait(0.1)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP"):TweenPosition(UDim2.new(0.096, 0, 0.859, 0),"Out","Bounce","1.5")
+		wait(1.5)
+		script.Parent.Parent:FindFirstChild("Shrink").Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(MZMXQ_fake_script)()
+local function JPWAJ_fake_script() -- Title.RainbowText 
+	local script = Instance.new('LocalScript', Title)
+
+	--MADE BY 5tevenrocks
+	
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.TextColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(JPWAJ_fake_script)()
+local function MRSS_fake_script() -- Shrink.ShrinkScript 
+	local script = Instance.new('LocalScript', Shrink)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP").Visible = false
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy").Position = UDim2.new(8.096, 0, 0.149)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex").Position = UDim2.new(8.096, 0, 0.289)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP").Position = UDim2.new(8.096, 0, 0.429)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics").Position = UDim2.new(8.096, 0, 0.570)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost").Position = UDim2.new(8.096, 0, 0.716)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP").Position = UDim2.new(8.096, 0, 0.859)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):TweenSize(UDim2.new(0, 125, 0, 32),"Out","Sine","1")
+		wait(1.6)
+		script.Parent.Parent:FindFirstChild("ScriptsTopBar"):TweenPosition(UDim2.new(0.821, 0, 0.5, 0),"In","Sine","1")
+		wait(1.5)
+		script.Parent.Parent:FindFirstChild("Extend").Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(MRSS_fake_script)()
+local function FJJMTVW_fake_script() -- Minimize.MinScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	local Cooldown = false
+	
+	if Cooldown == false then --Minimizing Area1, Area2, KillGui
+		script.Parent.MouseButton1Down:Connect(function()
+			Cooldown = true
+			script.Parent.Parent:FindFirstChild("Main"):TweenSize(UDim2.new(0, 350, 0, 32),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area1"):TweenSize(UDim2.new(0, 135, 0, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area1"):TweenPosition(UDim2.new(0.226, 0, 0.008, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area2"):TweenSize(UDim2.new(0, 180, 0, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area2"):TweenPosition(UDim2.new(0.707, 0, 0.039, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("KillGui"):TweenSize(UDim2.new(0, 180, 0, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("KillGui"):TweenPosition(UDim2.new(0.707, 0, 0.823, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Credits1"):TweenPosition(UDim2.new(-1.1, 0, 3.534, 0),"Out","Sine","1.5") --Credits1
+			script.Parent.Parent:FindFirstChild("Credits2"):TweenPosition(UDim2.new(-1.1, 0, 4.812, 0),"Out","Sine","1.5") --Credits2
+			script.Parent.Parent:FindFirstChild("Credits3"):TweenPosition(UDim2.new(-1.1, 0, 6.038, 0),"Out","Sine","1.5") --Credits3
+			script.Parent.Parent:FindFirstChild("Credits1").Visible = false
+			script.Parent.Parent:FindFirstChild("Credits2").Visible = false
+			script.Parent.Parent:FindFirstChild("Credits3").Visible = false
+			wait(0.45)
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = ""
+			wait(0.35)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = ""
+			script.Parent.Parent:FindFirstChild("KillGui").Text = ""
+			wait(0.3)
+			script.Parent.Parent:FindFirstChild("Maximize").Visible = true
+			script.Parent.Visible = false
+			Cooldown = false
+		end)
+	end
+	
+	if Cooldown == false then --Minimizing ScriptsTopBar
+		script.Parent.MouseButton1Down:Connect(function()
+			Cooldown = true
+			script.Parent.Parent:FindFirstChild("ScriptsTopBar").Visible = false
+			script.Parent.Parent:FindFirstChild("ScriptsTopBar").Position = UDim2.new(0.821, 0, 0.5, 0)
+			script.Parent.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts").Size = UDim2.new(0, 125, 0, 32)
+			script.Parent.Parent:FindFirstChild("Extend").Visible = true
+			script.Parent.Parent:FindFirstChild("Shrink").Visible = false
+			Cooldown = false
+		end)
+	end
+	
+	if Cooldown == true then
+		script.Parent.MouseButton1Down:Connect(function()
+			print"Don't spam this!"
+		end)
+	end
+	
+end
+coroutine.wrap(FJJMTVW_fake_script)()
+local function AAWERB_fake_script() -- Maximize.MaxScript 
+	local script = Instance.new('LocalScript', Maximize)
+
+	local Cooldown = false
+	
+	if Cooldown == false then
+		script.Parent.MouseButton1Down:Connect(function()
+			Cooldown = true
+			script.Parent.Parent:FindFirstChild("Credits1").Position = UDim2.new(-6.1, 0, 3.534, 0) --Credits1
+			script.Parent.Parent:FindFirstChild("Credits2").Position = UDim2.new(-6.1, 0, 4.812, 0) --Credits2
+			script.Parent.Parent:FindFirstChild("Credits3").Position = UDim2.new(-6.1, 0, 6.038, 0) --Credits3
+			script.Parent.Parent:FindFirstChild("Main"):TweenSize(UDim2.new(0, 350, 0, 300),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area1"):TweenSize(UDim2.new(0, 135, 0, 243),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area1"):TweenPosition(UDim2.new(0.226, 0, 1.383, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area2"):TweenSize(UDim2.new(0, 180, 0, 180),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("Area2"):TweenPosition(UDim2.new(0.707, 0, 1.382, 0),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("KillGui"):TweenSize(UDim2.new(0, 180, 0, 50),"Out","Sine","1.5")
+			script.Parent.Parent:FindFirstChild("KillGui"):TweenPosition(UDim2.new(0.707, 0, 8.167, 0),"Out","Sine","1.5")
+			wait(1.5)
+			script.Parent.Parent:FindFirstChild("ScriptsTopBar").Visible = true
+			wait(0.3)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "C"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "U"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "K"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cr"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Up"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Ki"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cre"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upd"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Kil"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cred"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upda"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Kill"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credi"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updat"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Kill G"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credit"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Update"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Kill Gu"
+			wait(0.1)
+			script.Parent.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credits"
+			script.Parent.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updates"
+			script.Parent.Parent:FindFirstChild("KillGui").Text = "Kill Gui"
+			script.Parent.Parent:FindFirstChild("Credits1").Visible = true
+			script.Parent.Parent:FindFirstChild("Credits2").Visible = true
+			script.Parent.Parent:FindFirstChild("Credits3").Visible = true
+			wait(0.3)
+			script.Parent.Parent:FindFirstChild("Credits1"):TweenPosition(UDim2.new(0.223, 0, 3.534, 0),"Out","Bounce","2.5") --Credits1
+			wait(0.2)
+			script.Parent.Parent:FindFirstChild("Credits2"):TweenPosition(UDim2.new(0.223, 0, 4.812, 0),"Out","Bounce","2.5") --Credits2
+			wait(0.2)
+			script.Parent.Parent:FindFirstChild("Credits3"):TweenPosition(UDim2.new(0.223, 0, 6.038, 0),"Out","Bounce","2.5") --Credits3
+			script.Parent.Parent:FindFirstChild("Minimize").Visible = true
+			script.Parent.Visible = false
+			Cooldown = false
+		end)
+	end
+	
+	if Cooldown == true then
+		script.Parent.MouseButton1Down:Connect(function()
+			print"Don't spam this!"
+		end)
+	end
+end
+coroutine.wrap(AAWERB_fake_script)()
+local function HZCX_fake_script() -- TopBar.Dragify 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0.25
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+	
+	--Dont use with other GUIs etc without my P3rm1ss10N! -W0lfy
+end
+coroutine.wrap(HZCX_fake_script)()
+local function YGXNL_fake_script() -- TopBar.PositioningScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	_G.Begin = 0
+	
+	script.Parent.Size = UDim2.new(0, 0, 0, 0) --TopBar
+	script.Parent:FindFirstChild("Area1").Size = UDim2.new(0, 0, 0, 0) --Area 1
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "" --Area 1 Text (Credits)
+	script.Parent:FindFirstChild("Area2").Size = UDim2.new(0, 0, 0, 0) --Area 2
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "" --Area 2 Text (Update Logs)
+	script.Parent:FindFirstChild("KillGui").Size = UDim2.new(0, 0, 0, 0) --Kill Gui button
+	script.Parent:FindFirstChild("KillGui").Text = ""
+	script.Parent:FindFirstChild("ScriptsTopBar").Visible = false --ScriptsTopBar
+	script.Parent:FindFirstChild("Title").Visible = false --PeePee Hub text
+	script.Parent:FindFirstChild("Minimize").Visible = false --Minimize button
+	script.Parent:FindFirstChild("Extend").Visible = false --Extend button
+	script.Parent:FindFirstChild("ScriptsTopBar").Position = UDim2.new(0.821, 0, 0.5, 0) --ScriptsTopBar
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts").Size = UDim2.new(0, 125, 0, 32) --Scripts size
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy").Position = UDim2.new(8.096, 0, 0.149)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex").Position = UDim2.new(8.096, 0, 0.289)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP").Position = UDim2.new(8.096, 0, 0.429)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics").Position = UDim2.new(8.096, 0, 0.570)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost").Position = UDim2.new(8.096, 0, 0.716)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP").Position = UDim2.new(8.096, 0, 0.859)
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("RemoteSpy").Visible = false
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("Dex").Visible = false
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("ESP").Visible = false
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("HDGraphics").Visible = false
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("FPSBoost").Visible = false
+	script.Parent:FindFirstChild("ScriptsTopBar"):FindFirstChild("Scripts"):FindFirstChild("CtrlTP").Visible = false
+	script.Parent:FindFirstChild("Credits1").Position = UDim2.new(-6.1, 0, 3.534, 0) --Credits1
+	script.Parent:FindFirstChild("Credits2").Position = UDim2.new(-6.1, 0, 4.812, 0) --Credits2
+	script.Parent:FindFirstChild("Credits3").Position = UDim2.new(-6.1, 0, 6.038, 0) --Credits3
+	script.Parent:FindFirstChild("Credits1").Visible = false
+	script.Parent:FindFirstChild("Credits2").Visible = false
+	script.Parent:FindFirstChild("Credits3").Visible = false
+	script.Parent:FindFirstChild("Main").Size = UDim2.new(0, 0, 0, 0)
+	wait(5)
+	script.Parent:FindFirstChild("Main"):TweenSize(UDim2.new(0, 350, 0, 300),"Out","Elastic","1")
+	wait(0.5)
+	script.Parent:TweenSize(UDim2.new(0, 350, 0, 32),"Out","Elastic","1")
+	wait(0.3)
+	script.Parent.Title.Visible = true
+	script.Parent.Minimize.Visible = true
+	script.Parent.Extend.Visible = true
+	script.Parent.ScriptsTopBar.Visible = true
+	wait(0.3)
+	script.Parent:FindFirstChild("Area1"):TweenSize(UDim2.new(0, 135, 0, 243),"Out","Elastic","1")
+	wait(0.3)
+	script.Parent:FindFirstChild("Area2"):TweenSize(UDim2.new(0, 180, 0, 180),"Out","Elastic","1")
+	wait(0.3)
+	script.Parent:FindFirstChild("KillGui"):TweenSize(UDim2.new(0, 180, 0, 50),"Out","Elastic","1")
+	wait(0.75)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "C"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "U"
+	script.Parent:FindFirstChild("KillGui").Text = "K"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cr"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Up"
+	script.Parent:FindFirstChild("KillGui").Text = "Ki"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cre"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upd"
+	script.Parent:FindFirstChild("KillGui").Text = "Kil"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cred"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upda"
+	script.Parent:FindFirstChild("KillGui").Text = "Kill"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credi"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updat"
+	script.Parent:FindFirstChild("KillGui").Text = "Kill G"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credit"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Update"
+	script.Parent:FindFirstChild("KillGui").Text = "Kill Gu"
+	wait(0.1)
+	script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credits"
+	script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updates"
+	script.Parent:FindFirstChild("KillGui").Text = "Kill Gui"
+	script.Parent:FindFirstChild("Credits1").Visible = true
+	script.Parent:FindFirstChild("Credits2").Visible = true
+	script.Parent:FindFirstChild("Credits3").Visible = true
+	wait(0.2) --credits stuff
+	script.Parent:FindFirstChild("Credits1"):TweenPosition(UDim2.new(0.223, 0, 3.534, 0),"Out","Bounce","2.5")
+	wait(0.3)
+	script.Parent:FindFirstChild("Credits2"):TweenPosition(UDim2.new(0.223, 0, 4.812, 0),"Out","Bounce","2.5")
+	wait(0.3)
+	script.Parent:FindFirstChild("Credits3"):TweenPosition(UDim2.new(0.223, 0, 6.038, 0),"Out","Bounce","2.5")
+	
+end
+coroutine.wrap(YGXNL_fake_script)()
+local function NXBLBNS_fake_script() -- KillGui.KillGuiScript 
+	local script = Instance.new('LocalScript', KillGui)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(NXBLBNS_fake_script)()
+local function HGTFCNQ_fake_script() -- ScreenGui.TypeCredits 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--Types out 'Credits' upon execution
+	
+	if _G.Begin == 1 then
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "C"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cr"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cre"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Cred"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credi"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credit"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area1"):FindFirstChild("Credits").Text = "Credits"
+		print"Finished typing Credits."
+	end
+	
+end
+coroutine.wrap(HGTFCNQ_fake_script)()
+local function GQVPP_fake_script() -- ScreenGui.TypeKillGui 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--Types out 'Kill Gui' upon execution
+	
+	if _G.Begin == 1 then
+		script.Parent:FindFirstChild("KillGui").Text = "K"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Ki"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Kil"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Kill"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Kill G"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Kill Gu"
+		wait(0.1)
+		script.Parent:FindFirstChild("KillGui").Text = "Kill Gui"
+		print"Finished typing Kill Gui."
+	end
+	
+end
+coroutine.wrap(GQVPP_fake_script)()
+local function WGPUWH_fake_script() -- ScreenGui.TypeUpdate 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	--Types out 'Update Logs' upon execution
+	
+	if _G.Begin == 1 then
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "U"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Up"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upd"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Upda"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updat"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Update"
+		wait(0.1)
+		script.Parent:FindFirstChild("Area2"):FindFirstChild("UpdateTitle").Text = "Updates"
+		print"Finished typing Updates"
+	end
+end
+coroutine.wrap(WGPUWH_fake_script)()

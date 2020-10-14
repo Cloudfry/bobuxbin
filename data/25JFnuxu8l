@@ -1,0 +1,80 @@
+dqw4w9wgxcq bot ideas
+
+prefix is d/ or @the_bot_name <= only works for general commands
+
+===== bot description:
+dQw4w9WgXcQ#7630 []
+dQw4w9WgXcQ is made in the discord.js library for multi-purpose stuff and based on fun topics, including over 5-7 command sections with over 30-40 useful(totally) commands; 
+Sections: General, Music(Soon), Fun/Entertainment(Main Purpose), Moderation(poor), Management(Info), Text(ASCII stuff), Images(image gens), Other(less)
+
+
+
+
+
+
+
+====command sections
+= general - bot stuff ; help ping invite support status updates credits totalmembers totalchannels totalserversXguild commandlist uptime creator website suggest(cd) version test donate info vote page docs
+
+= music - soon hard
+
+= moderation - soon mod is hard rn ; kick ban mute nick purge unban 
+
+= management - server manage ; membercount, userinfo, serverinfo, ownerinfo, channelinfo, roles, dm(u), avatar(u), timenow, hello
+
+= fun/entertainment - memes jokes troll nitro faketoken randomapi fml n stuff ; meme(api), joke(api), gay(rate), pp(rate), ask(question), rock paper sissor ,snipe ,rate(question), coinflip, 8ball(question), hack(u), token(sra), rolldice, google, youtube, nitro(r)
+
+= text - text arts n stuff generate text isimporter copypasta ; ascii. unicode(text), say(text)(nomentions(fliter)), urban(api(fetch)), randomnumber, randompercent
+
+= images - generate images n alexflipnote api; dogs(api), cats(api), anime(morestuff), wink(sra), [more randomapi stuff], supreme(tex)(aapi)
+
+= other - soon ; gamegift
+
+== admin - only owner can use ; restart, eval, info
+
+====shortcut words
+apiep = api endpoint
+fliter = fliter(something)
+nomention = fliter the mentions in a command
+aapi = alexflipnoteapi
+sra = somerandomapi
+X = or 
+u = user
+r = random
+djss = discordjs discordserver
+
+
+====sources
+discordjs.guide
+https://alexflipnote.dev/
+https://api.alexflipnote.dev/
+https://api.urbandictionary.com/v0/define?term=
+http://some-random-api.ml/
+https://github.com/Meveloper/cloudbot/blob/master/index.js
+
+====npmpackages
+discord.js
+fs
+node-fetch
+
+====ideas
+one script file for each sections
+embed in commands
+more embed 
+dmot skid
+dank memer skid
+abeer khan dm skid
+more bot skid
+case insentive
+send ready msg 
+three bot logs -guildcreateXdelete -admin -botstuff(status, logs, launches)
+cooldown
+check dms LOL
+
+
+====questions to ask in djss
+case insentive
+
+====things to do
+find nitro gifts 
+FIND A GOOD NAME

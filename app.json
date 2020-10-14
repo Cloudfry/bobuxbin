@@ -1,0 +1,15 @@
+{
+	"name": "BobuxBin",
+	"description": "BobuxBin is a place where you can store text/code/script for unlimited period of time! Made by Cloudflare#0001",
+	"repository": "https://github.com/Cloudfry/",
+	"logo": "https://media.discordapp.net/attachments/756811375518547978/758144726347415572/avatars558915551326633984.png",
+	"keywords": [
+		"node",
+		"paste",
+		"pastebin",
+		"haste",
+		"hastebin",
+		"code",
+		"syntax highlighting"
+	]
+}
